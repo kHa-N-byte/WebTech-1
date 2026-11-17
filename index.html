@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Campus Club Membership</title>
+<style>
+     body{
+     font-family: Arial;
+    background-color: #f1edff;
+}
+    h1{
+     text-align: center;
+     color: #bca9e6;
+   }
+.topnav{
+ background-color: #311e5a;
+ position: sticky;
+  top: 0;
+  overflow: hidden;
+     }
+     .topnav a {
+           float: left;
+           color: white;
+           text-decoration: none;
+           padding: 14px 16px;
+       }
+       .topnav a:hover {
+           background-color: #8063cf;
+       }
+       .card {
+           width: 400px;
+           margin: 40px auto;
+           padding: 15px;
+           border: 2px solid #8063cf;
+           border-radius: 10px;
+           background-color: white;
+           box-shadow: 4px 4px 8px gray;
+           position: relative;
+       }
+       .card > h2 {
+           color: #38216b;
+       }
+       .card p {
+           font-style: italic;
+           color: gray;
+       }
+       .badge {
+           position: absolute;
+           top: 10px;
+           right: 10px;
+           background-color: red;
+           color: white;
+           padding: 5px;
+           border-radius: 5px;
+       }
+ button{
+     background-color: #906bda;
+    color: white;
+    padding: 10px;
+    border: none;
+     border-radius: 5px;
+        }
+</style>
+</head>
+<body>
+<h1>Campus Clubs</h1>
+<div class="topnav">
+<a href="#home">Home</a>
+<a href="#events">Events</a>
+<a href="#join">Join</a>
+</div>
+<div class="card">
+<span class="badge">NEW</span>
+<h2>Programming Club</h2>
+<p>Learn coding and build projects.</p>
+<h3>Join Our Community</h3>
+<form action="#" method="post">
+<fieldset>
+<legend>Join the Club</legend>
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name" minlength="3" required><br><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+<label for="sid">Student ID:</label><br>
+<input type="text" id="sid" name="sid"
+                      placeholder="24-56789-1"
+                      pattern="[0-9]{2}-[0-9]{5}-[0-9]"
+                      required><br><br>
+<label for="age">Age:</label>
+<br>
+<input type="number" id="age" name="age" min="17" max="40" required><br><br>
+     Membership Type:<br>
+<input type="radio" id="general" name="type" value="General" required>
+<label for="general">General</label>
+<input type="radio" id="executive" name="type"  value="Executive">
+<label for="executive">Executive</label><br><br>
+<label for="club">Preferred Club:</label><br>
+<select id="club" name="club" required>
+<option value="">Select a club</option>
+<option value="Programming">Programming</option>
+<option value="Robotics">Robotics</option>
+<option value="Debate">Debate</option>
+</select><br><br>
+
+<label for="reason"> Why do you want to join?</label><br>
+<textarea id="reason" name="reason" maxlength="200" required></textarea><br><br>
+<input type="checkbox" id="rules" name="rules required>
+<label for="rules">I agree to the club rules</label><br><br>
+<button type="submit">Join Now</button>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
